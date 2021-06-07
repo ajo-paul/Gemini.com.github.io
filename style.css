@@ -1,0 +1,450 @@
+html{ /* overwrite default style*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Navigation styling */
+ nav{padding: 1rem;background-color: rgb(255, 255, 255);
+     position:sticky;
+     position: -webkit-sticky;
+     top: 0;
+     display: flex;
+     justify-content:space-between;
+     height: 5vh;
+     align-items:center;
+     box-shadow:  0px 1px 2px lightgray;
+ }
+ .logo{
+     max-width:150px;
+     max-height:100% ;
+     padding: 0;
+     margin-left: 20rem;
+     
+     
+}
+.menu{ /*parent of menu links*/
+    margin-right: 20rem;
+    display: flex;
+    justify-content: space-evenly  ;
+    width: 30%;
+      
+}
+.menu li{ 
+    list-style: none; /* this line get rid of dots in <li> tag*/
+    margin: 8%;
+}
+.menu li img{
+    max-width:21px;
+     max-height:100% ;
+     padding: 2px;
+    justify-content:center; /* align horizontally*/
+}
+#getstarted{
+    border: black;
+    border-radius: 10%;
+    padding: 8%;
+    color: white;
+    background-color: black;
+}
+#getstarted:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(104, 237, 255);
+}
+.menu a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(56, 56, 56);   
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Optional Hover function*/
+.menu a:not( #getstarted ):hover{
+    text-decoration:underline solid rgb(104, 237, 255) 5px;
+    
+   /* font-weight: 500;
+    color: white;
+    padding: 2% 2%;
+    border-radius: 0%;  
+    background-color: rgb(104, 221, 236); 
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+} 
+#search {
+    padding: 8%;
+}
+#search img:hover{
+    background-color:rgb(104, 237, 255) ;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/*features slide*/
+.slide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(109, 52, 243), rgb(169, 222, 231));
+    height: 5vh;
+}
+.slide img {
+    display: flex;
+    margin-right: 10px;
+
+    width: auto;
+    
+    height: 2vh;
+}
+.slide p{
+   color: white;
+}   
+.slide a {
+    text-decoration: none;
+    color: white;
+} 
+
+
+
+/*part1 83vh*/
+
+
+#part1{
+    display: flex;
+     justify-content:space-evenly;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    margin:5px 20px;
+}
+.welcome_text{
+    display: flex;
+    flex-direction: column;
+   
+  
+    /*padding-left: 10rem ;*/
+   
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+   
+    
+}
+.advert{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 ;
+    /*padding-right: 10rem ;*/
+    
+}
+.advert video{
+    max-width: auto;
+    max-height: 100%;
+    pointer-events:none;
+}
+.welcome_text h1{
+    font-size: 90px;
+    margin: 0 auto;
+}
+.welcome_text h6{
+    text-align: left;
+    justify-content: center;
+    margin: 20px auto;
+    width:35vw;
+    font-size: 20px;
+    font-weight:normal;
+
+}
+.download_app {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 570px; ;
+}
+.download_app img{
+     margin: 0 20px;
+
+    width: 150px;
+    
+
+}
+
+/*part2 100vh*/
+#part2{
+   
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.news{display: flex;
+    margin: auto;
+    align-content: center;
+}
+.news img{
+    padding: 0 30px;
+}
+/*part 3 start*/
+.part3{
+    height: 50vh;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.text3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.text3 h2{
+    font-size: 35px;
+    margin: 0;
+}
+
+.text3 ul{
+    padding-left: 1rem; 
+    font-size: 20px;
+}
+.part3 #joinbtn{
+    width: max-content;
+    padding: 1rem 2rem;
+    background-color:black;
+    border:solid white 2px;
+    border-radius:20px;
+    font-weight:700 ;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.part3 img{
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+
+/*part4 start*/
+.part4{
+    
+    height: 50vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+.img4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img4 img{
+    width: 50%;
+    height: auto;
+    margin:20px;
+    pointer-events: none;
+    z-index: 1;
+    position: relative;
+    ;
+    
+}
+.part4 .text{
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto 0;
+    justify-content: flex-end;
+}
+.part4 h2{
+    font-size: 40px;
+    margin: 0;
+}
+.part4 p{
+    font-size: 20px;
+}
+.part4 button{
+    width: max-content;
+    padding: 1rem 2rem;
+   border:solid rgb(0, 0, 0) 2px;
+    border-radius:20px;
+    font-weight:700 ;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/*Part 5*/
+.part5{
+    z-index: 1;
+    position: relative;
+    height: 50vh;
+    padding-top: 2rem;
+    background-color:white;
+    
+    
+}
+.part5 h2{
+    text-align: center;
+    padding-top: 20px;
+    margin:0;
+    font-size: 35px;
+}
+.part5 .grid{
+    margin: 20px auto;
+    display: grid;
+    padding:2rem;
+    width: 55vw;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-flow: column;
+}
+.part5 .gridelements{
+    display: grid;
+    margin: 0;
+    height: fit-content;
+}
+.part5 h5{
+    margin: 0 0 3px 0;
+    font-size: 20px;
+
+}
+.part5 p{
+    text-align: left;
+    margin: 3px 0 3px 0;
+     font-size: 16px;
+    color: black;
+}
+.part5 a{
+    font-weight:500;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+/*part6*/
+.part6{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+.part6 .container6{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+   justify-content: center;
+    width: 30vw;
+}
+.img6 {
+    display: flex;
+    height: auto;
+}
+    
+
+.img6 img{
+    width: auto;
+    height: auto;
+    margin:20px;
+    pointer-events: none;
+}
+
+.part6 h2{
+    font-size: 40px;
+    margin: 0;
+}
+.part6 p{
+    font-size: 20px;
+}
+.part6 button{
+    width: max-content;
+    padding: 1rem 2rem;
+   border:solid rgb(0, 0, 0) 2px;
+    border-radius:20px;
+    font-weight:700 ;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+/*part7*/
+.part7{
+    background-color: black;
+    display: flex;
+    
+    justify-content: center;
+    
+}
+.container7{
+    display: flex;flex-direction: column;
+    align-content: center;
+    margin: 5rem auto;
+}
+
+.container7 h2{
+    font-size: 40px;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.container7 p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.container7 button{
+    margin: 0 auto;
+    width: max-content;
+    padding: 1rem 2rem;
+   border:solid rgb(73, 234, 255) 2px;
+    border-radius:20px;
+    font-weight:700 ;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(73, 234, 255) ;
+    cursor: pointer;
+}
+/*footer*/
+.footer{
+    height: 50vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerfoot{
+    display: flex;
+
+}
+.column1, .column2,.column3, .column4, .column5{
+    margin: 1rem 3rem;
+}
+
+.containerfoot .column1{
+    width: 20vw;
+}
+.column1 img {
+    width: 50%;
+}
+.column1 p{
+    color: grey;
+    font-size: 15px;
+    width: 10vw;
+    
+}
+
+.containerfoot button{
+    text-decoration: none;
+}
+.containerfoot ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.column img{
+width: fit-content;
+}
