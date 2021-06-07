@@ -10,6 +10,7 @@ html{ /* overwrite default style*/
  nav{padding: 1rem;background-color: rgb(255, 255, 255);
      position:sticky;
      position: -webkit-sticky;
+     z-index:4;
      top: 0;
      display: flex;
      justify-content:space-between;
