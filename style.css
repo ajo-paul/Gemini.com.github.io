@@ -5,7 +5,14 @@ html{ /* overwrite default style*/
     font-size: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1342px) {
+    /* Styles */
+    #error-page{
+      display: none;
+      visibility: hidden;
+    
+    }
 /*Navigation styling */
  nav{padding: 1rem;background-color: rgb(255, 255, 255);
      position:sticky;
@@ -449,3 +456,44 @@ body{
 .column img{
 width: fit-content;
 }
+}/*Clossing of desktop Media query*/
+
+/* Small devices ----------- */
+@media only screen  and (min-width : 1px) and (max-device-width : 1341px) {
+    /* Styles */
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    nav ,.slide, #part1, #part2, .part3, .part4, .part5, .part6, .part7, .footer{
+        display: none;
+        visibility: hidden
+    }
+    
+    #error-page{
+        height: 100vh;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+#error-page h1{
+    font-size:80px;
+    margin: 0;
+    color: white;
+}
+#error-page h2{
+    font-size:40px;
+    margin: 0;
+    color: white;
+}
+#error-page h2, h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+}/*Clossing of Mobile Media query (Error page)*/
+
+
